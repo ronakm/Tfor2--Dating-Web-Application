@@ -1,0 +1,16 @@
+$(document).ready(function(){	
+
+if(document.regi_form.secq.value=="secq")
+{
+alert("Please Select your Security Question");
+document.regi_form.secq.focus();
+return(false);
+}
+if(document.regi_form.seca.value=="")
+{
+alert("Please Answer the security question");
+document.regi_form.seca.focus();
+return(false);
+}
+
+});

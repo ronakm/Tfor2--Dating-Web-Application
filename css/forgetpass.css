@@ -1,0 +1,149 @@
+body{
+    
+    font-family:arial;
+    float:left;
+    min-width:100%;
+    margin:0px;
+    padding: 0px;
+    color: #4F4F4F;
+}
+
+body .container {
+    
+    width:994px;
+    margin: 0px auto;
+}
+/* ....***************************** header **********************.......... */
+body .container header {
+    
+        float:left;
+        width:100%;
+}
+body .container header a:first-child {
+    float:left;
+    margin-left: 3.5%;
+}
+body .container header .sell_story {
+    float:left;
+    background: #F5F5F5;
+    border: 1px solid #D1D1D1;
+    border-radius: 6px 6px 6px 6px;
+    height: 48px;
+    line-height: 135%;
+    padding: 10px 15px;
+    width: 265px;  
+    margin-top: 10px;
+    margin-left: 15.6%;
+}
+
+
+body .container header .sell_story p {
+   font-size: 89%;
+    line-height: 16px;
+
+    margin-top: 1px;
+    margin-right:10px;
+}
+body .container header .sell_story p span {
+    
+    color:#EE3668;
+}
+body .container header .sell_story p span strong {
+    font-size:126%;
+}
+
+body .container header .point_picture {
+    float:right;
+    
+    background:#C6D049;
+    border-radius: 6px 6px 6px 6px;
+    height: 60px;
+    margin-right: 0;
+    margin-top:10px;
+    padding: 5px 5px 5px 12px;
+    width: 36.4%;
+}
+body .container header .point_picture  div {
+    float:left;
+    width:63%;
+}
+body .container header .point_picture  div p:first-child {
+    color: #EE3668;
+    font-size: 142%;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-top: 2px;
+ 
+}
+
+body .container header .point_picture  div p:nth-child(2) {
+ color: #0E4371;
+    font-size: 85%;
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+}
+body .container header .point_picture  img {
+    
+    float:right;
+    margin-right: 12px;
+    margin-top: -2px;
+}
+
+/* section */
+body .container section 
+{
+    clear:left;
+    float:left;
+    width:100%;
+    background-color: #EDEDED;
+    height:500px;
+}
+body .container section  h3 
+{
+    text-align: center;
+}
+body .container section  form {
+    float: left;
+    margin: 0 auto;
+    margin-left: 40%;
+   
+    width: 60%;
+}
+body .container section  form  label 
+{
+    clear:left;
+    float:left;
+    text-align: left;
+}
+body .container section  form  input 
+{
+      clear:left;
+    
+    float:left;
+}
+body .container section  form  a 
+{
+    float:left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#home_link 
+{
+    float:left;
+    width:100%;
+    text-align: center;
+}
+#error_msg {
+    float:left;
+    width:100%;
+    text-align: center;
+    color:red;
+}
+#password_error,#confirmpass_error 
+{
+    clear:left;
+    float:left;
+    color:red;
+}

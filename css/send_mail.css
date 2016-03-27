@@ -1,0 +1,135 @@
+#send_mail {
+
+clear:left;
+float:left;
+width:96%;
+background-color:#EAEAEA;
+margin-top:20px;
+border-radius: 6px 6px 6px 6px;
+border: 1px solid  #D4D4D4;
+padding-left:15px;
+pagging-right:15px;
+padding-top:15px;
+}
+
+#send_mail .heading {
+    color:#17325A;
+    font-size:18px;
+    font-weight: 800;
+}
+
+#send_mail .success_msg {
+    
+     color:#17325A;
+     font-size:15px;
+     float:left;
+}
+#send_mail .another_mail {
+    margin-bottom: 20px;
+    margin-left: 23px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    float:left;
+    clear:left;
+}
+
+#send_mail  form {
+    float:left;
+    width: 100%;
+}
+
+#send_mail form input[type="text"] {
+    
+    float:left;
+    border: none;
+    border-radius: 6px 6px 6px 6px;
+    width:95%;
+    padding:5px;
+    margin-bottom: 0;
+}
+#send_mail form textarea {
+    
+    clear:left;
+    float:left;
+    border: none;
+    border-radius: 6px 6px 6px 6px;
+    padding:5px;
+    width:95%;
+    resize:vertical;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#send_mail form .mail_button {
+
+    clear:left;
+    float:right;
+    width:40%;
+    margin-top: 10px;
+}
+#send_mail form .mail_button input {
+    
+    width:80px;
+    background-color:#E2E2E2;
+    border: none;
+    height:30px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+#message_error_msg {
+    display: none;
+}
+
+#message_error_msg {
+    
+    clear: left;
+    float: left;
+    width: 60%;
+    margin-top:5px;
+    margin-bottom: 10px;
+    margin-left:5px;
+  
+}
+#message_error_msg img {
+    
+   margin-bottom: 0px; 
+   padding:0;
+   margin-left: 23%;
+}
+#message_error_msg div {
+    clear: left;
+    color: #E41F68;
+    font-size:80%;
+    
+    width:100%;
+}
+
+/* subject */
+#subject_error_msg {
+    display: none;
+}
+
+#subject_error_msg {
+    
+    clear: left;
+    float: left;
+    width: 30%;
+    margin-top:5px;
+    margin-bottom: 10px;
+    margin-left:5px;
+  
+}
+#subject_error_msg img {
+    
+   margin-bottom: 0px; 
+   padding:0;
+   margin-left: 23%;
+}
+#subject_error_msg div {
+    
+    clear: left;
+    color: #E41F68;
+    font-size:80%;
+    
+    width:100%;
+}

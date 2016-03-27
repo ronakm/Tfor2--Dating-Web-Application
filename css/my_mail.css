@@ -1,0 +1,84 @@
+#profile_navigation ul #receive {
+    
+    width:161px;
+}
+#profile_navigation ul #sent {
+    width:155px;
+}
+#profile_navigation ul #delete {
+    width:150px;
+    border-radius: 0px 6px 6px 0px;
+} 
+#profile_navigation ul {
+    width:100%;
+}
+#receiver_mail_body
+{
+    clear:left;
+    float:left;
+    width:100%;
+    margin-top: 20px;
+}
+#receiver_mail_body .receive_mail 
+{
+    clear:left;
+    float:left;
+    width:96%;
+    padding:10px;
+    background-color: #EAEAEA;
+    border-radius: 6px 6px 6px 6px;
+    margin-bottom: 5px;
+    
+}
+#receiver_mail_body .receive_mail p {
+    margin-bottom: 5px;
+    color:#153058;
+}
+#receiver_mail_body .receive_mail p span {
+   color: #4F4F4F;
+   margin-left:5px;
+}
+
+
+#receiver_mail_body .receive_mail .options .click_here
+{
+    clear:left;
+    color:#2567D5;
+    cursor: pointer;
+    font-size:12px;
+    display: none;
+    width: 100%;
+    
+}
+#receiver_mail_body .receive_mail .options .view_text {
+    color:#2567D5;
+    cursor: pointer;
+    font-size:12px; 
+}
+#receiver_mail_body .receive_mail .click_here:hover {
+   color:#153058;
+   
+}
+#receiver_mail_body .receive_mail .message_div {
+   
+    margin-top:25px;
+    width:96%;
+    background-color:#FFFFFF;
+    
+    border-radius: 6px 6px 6px 6px;
+    border: none;
+    padding:10px;
+   
+}
+#receiver_mail_body .receive_mail  .options {
+    float:left;
+    width:95%;
+}
+#receiver_mail_body .receive_mail  .options div {
+    float:left;
+    width:100%;
+}
+#receiver_mail_body .receive_mail  .options .view_text  a {
+    float:right;
+    text-decoration: none;
+}

@@ -1,0 +1,92 @@
+
+body{
+    font-family: arial;
+    margin:0px;
+}
+.main_header{
+    clear:left;
+    float:left;
+     width:90%;
+     border-bottom:#3F71A2 solid 2px;
+     margin-left: 5%;
+     padding-bottom: 10px;
+   
+    
+}
+.main_header .logo{
+    
+    float:left;
+    width:90%;
+
+}
+.main_header .logo {
+    float:left;
+     width:50%;
+     height:58px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    
+      
+     
+}
+
+.nav_admin{
+    float: right;
+    margin-right: 4%;
+    margin-top: 29px;
+    width: 10%;
+}
+.nav_admin p a {
+    
+    margin-left:3%;
+}
+
+section{
+    clear:both;
+    float:left;
+    width:100%;
+    
+}
+section .admin_body {
+    
+    width:90%;
+    float:left;
+    margin-left:5%;
+    margin-top:20px;
+    border:#3F71A2 solid 1px;
+}
+
+section .admin_body form .add{
+    
+    font-weight:bold;
+    font-size:15px;
+    margin-left:8%;
+    margin-bottom: 20px;
+}
+section .admin_body form p label{
+    font-weight:bold;
+    font-size:15px;
+    width:14%;
+}
+section .admin_body form p input[type="text"]{
+    width:20%;
+    margin-left:1%;
+}
+section .admin_body form p textarea{
+    width:20%;
+    resize:none;
+    margin-left:1%;
+}
+
+section .admin_body form p input[type="submit"]{
+    margin-left:15%;
+    width:10%;
+}
+section .admin_body form p input[type="button"]{
+    
+    width:10%;
+}
+
+
+
+

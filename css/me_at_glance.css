@@ -1,0 +1,344 @@
+profile_navigation.main_profile_content #profile_accordian {
+    background-color: #E8E8E8;
+}
+
+#basics_info ul li ,#morefact ul li,#real_details ul li{
+    
+    cursor: pointer
+}
+
+#height .options {
+    display: none;
+    float:left;
+    color: #4879A4;
+   margin-left: 40%;
+   font-size: 12px;
+    width: 60%;
+}
+
+#height .height_own_words {
+      floa:left;
+      margin-left: 40%;
+      display: none;
+      margin-top: 5px;
+      
+}
+#height .height_own_words  textarea {
+    resize-horizontal:none;
+    width:55%;
+    height:25px;
+ }
+ 
+ #height .height_own_words p {
+     border: none;
+     color: #4879A4;
+     font-size: 12px;
+     padding:0;
+     margin:0px;
+ }
+ 
+ 
+ /* ................. body ...................*/
+ 
+ #body_type .options {
+    display: none;
+    float:left;
+    color: #4879A4;
+   margin-left: 40%;
+   font-size: 12px;
+    width: 60%;
+}
+
+#body_type .height_own_words {
+      floa:left;
+      margin-left: 40%;
+      display: none;
+      margin-top: 5px;
+      
+}
+#body_type .height_own_words  textarea {
+    resize-horizontal:none;
+    width:55%;
+    height:25px;
+ }
+ 
+ #body_type .height_own_words p {
+     border: none;
+     color: #4879A4;
+     font-size: 12px;
+     padding:0;
+     margin:0px;
+ }
+ 
+ /*................ relation ............ */
+ 
+ #relation .options {
+    display: none;
+    float:left;
+    color: #4879A4;
+   margin-left: 40%;
+   font-size: 12px;
+    width: 60%;
+}
+
+#relation .height_own_words {
+      floa:left;
+      margin-left: 40%;
+      display: none;
+      margin-top: 5px;
+      
+}
+#relation .height_own_words  textarea {
+    resize-horizontal:none;
+    width:55%;
+    height:25px;
+ }
+ 
+ #relation .height_own_words p {
+     border: none;
+     color: #4879A4;
+     font-size: 12px;
+     padding:0;
+     margin:0px;
+ }
+ 
+ /* ...........ethnicity............. */
+ 
+ 
+ 
+ #ethnicity .options {
+    display: none;
+    float:left;
+    color: #4879A4;
+   margin-left: 40%;
+   font-size: 12px;
+    width: 60%;
+}
+
+#ethnicity .height_own_words {
+      floa:left;
+      margin-left: 40%;
+      display: none;
+      margin-top: 5px;
+      
+}
+#ethnicity .height_own_words  textarea {
+    resize-horizontal:none;
+    width:55%;
+    height:25px;
+ }
+ 
+ #ethnicity .height_own_words p {
+     border: none;
+     color: #4879A4;
+     font-size: 12px;
+     padding:0;
+     margin:0px;
+ }
+ 
+ /* ................smoking ................... */
+ 
+ #smoking .options {
+    display: none;
+    float:left;
+    color: #4879A4;
+   margin-left: 40%;
+   font-size: 12px;
+    width: 60%;
+}
+
+#smoking .height_own_words {
+      float:left;
+      margin-left: 40%;
+      display: none;
+      margin-top: 5px;
+      
+}
+#smoking .height_own_words  textarea {
+    resize-horizontal:none;
+    width:55%;
+    height:25px;
+ }
+ 
+ #smoking .height_own_words p {
+     border: none;
+     color: #4879A4;
+     font-size: 12px;
+     padding:0;
+     margin:0px;
+ }
+ 
+ /* ............................ drink ................*/
+ 
+ #drink .options {
+    display: none;
+    float:left;
+    color: #4879A4;
+    margin-left: 40%;
+    font-size: 12px;
+    width: 60%;
+}
+
+#drink .height_own_words {
+      float:left;
+      margin-left: 40%;
+      display: none;
+      margin-top: 5px;
+      
+}
+#drink height_own_words  textarea {
+    resize-horizontal:none;
+    width:55%;
+    height:25px;
+ }
+ 
+ #drink .height_own_words p {
+     border: none;
+     color: #4879A4;
+     font-size: 12px;
+     padding:0;
+     margin:0px;
+ }
+ 
+ /* .......... children .......*/
+ #children .options {
+    display: none;
+    float:left;
+    color: #4879A4;
+    margin-left: 40%;
+    font-size: 12px;
+    width: 60%;
+}
+
+#children .height_own_words {
+      float:left;
+      margin-left: 40%;
+      display: none;
+      margin-top: 5px;
+      
+}
+#children height_own_words  textarea {
+    resize-horizontal:none;
+    width:55%;
+    height:25px;
+ }
+ 
+ #children .height_own_words p {
+     border: none;
+     color: #4879A4;
+     font-size: 12px;
+     padding:0;
+     margin:0px;
+ }
+ 
+ 
+ /* ................ education ........... */
+ 
+ #education .options {
+    display: none;
+    float:left;
+    color: #4879A4;
+    margin-left: 40%;
+    font-size: 12px;
+    width: 60%;
+}
+
+#education .height_own_words {
+      float:left;
+      margin-left: 40%;
+      display: none;
+      margin-top: 5px;
+      
+}
+#education height_own_words  textarea {
+    resize-horizontal:none;
+    width:55%;
+    height:25px;
+ }
+ 
+ #education .height_own_words p {
+     border: none;
+     color: #4879A4;
+     font-size: 12px;
+     padding:0;
+     margin:0px;
+ }
+ 
+ /* .......occumption............ */
+ #morefact .features_list .options {
+    display: none;
+    float:left;
+    color: #4879A4;
+    margin-left: 40%;
+    font-size: 12px;
+    width: 60%;
+}
+
+#morefact .features_list .height_own_words {
+      float:left;
+      margin-left: 40%;
+      display: none;
+      margin-top: 5px;
+      
+}
+#morefact .features_list .height_own_words  textarea {
+    resize-horizontal:none;
+    width:55%;
+    height:25px;
+ }
+ 
+ #morefact .features_list .height_own_words p {
+     border: none;
+     color: #4879A4;
+     font-size: 12px;
+     padding:0;
+     margin:0px;
+ }
+ 
+ 
+ /* ........... real_details features ............ */
+ 
+ #real_details .features_list .options {
+    display: none;
+    float:left;
+    color: #4879A4;
+    margin-left: 40%;
+    font-size: 12px;
+    width: 60%;
+}
+
+#real_details .features_list .height_own_words {
+      float:left;
+      margin-left: 40%;
+      display: none;
+      margin-top: 5px;
+      
+}
+#real_details .features_list .height_own_words  textarea {
+    resize-horizontal:none;
+    width:55%;
+    height:25px;
+ }
+ 
+ #real_details .features_list .height_own_words p {
+     border: none;
+     color: #4879A4;
+     font-size: 12px;
+     padding:0;
+     margin:0px;
+ }
+
+ 
+ #basics_info ul li  div label,
+ #morefact ul li div label,
+ #real_details ul li div label
+ {
+     font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    float:none;
+    display: inline;
+    color: #4879A4;
+ }
+ 
+ 

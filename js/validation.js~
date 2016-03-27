@@ -1,0 +1,581 @@
+var flag1=0;
+var flag2=0;
+var flag_id=0;
+var flag_pass=0;
+var flag_for=0;
+
+
+$(document).ready(function(){	
+
+
+
+$("#username").blur(function(){								//Function to execute on element blur
+name_chk();
+});
+
+$("#password").blur(function(){								//Function to execute on element blur
+name_chk1();
+});
+
+$("#username").focus(function(){								//Function to execute on element blur
+$("#name_id").html("");
+});
+
+$("#password").focus(function(){								//Function to execute on element blur
+$("#name_id1").html("");
+});
+
+/*$('#register_submit').submit(function(){
+	alert("F U");
+     if(flag1==1 && flag2==1){
+         return true;
+     }else{
+       return false;
+     }
+});*/
+$("#pass_new").blur(function(){								//Function to execute on element blur
+name_chk2();
+});
+
+$("#pass_new").focus(function(){								//Function to execute on element blur
+$(".pass_error1").html("");
+});
+
+$("#login_user").focus(function(){								//Function to execute on element blur
+$("#login_user_error").html("");
+});
+$("#login_user").blur(function(){								//Function to execute on element blur
+name_chk5();
+});
+$("#pass_user_for").blur(function(){								//Function to execute on element blur
+name_chk7();
+});
+
+$("#pass_user_for").focus(function(){								//Function to execute on element blur
+$("#for_pass_vali").html("");
+});
+
+$("#login_pass").focus(function(){								//Function to execute on element blur
+$("#login_pass_error").html("");
+});
+$("#login_pass").blur(function(){								//Function to execute on element blur
+name_chk6();
+});
+
+
+});
+
+function name_chk()											//Validation of name
+{
+	user_name=document.getElementById("username").value;
+	var len=user_name.length;
+	if(len<3 || len>25)
+	{
+		$("#name_id").html("Length should be >=3");
+		$("#name_id").css("color","red");
+		blank_name=1;
+	}
+	else
+	{
+		re = /^[A-Za-z0-9]+$/;
+		var isValid = re.test(user_name);
+		if(isValid==false)
+		{
+			$("#name_id").html("Cannot contain special characters");
+			blank_name=1;
+			$("#name_id").css("color","red");
+			
+			
+		}
+		else
+		{
+			$("#name_id").html("");
+			blank_name=1;
+			flag1=1;
+			
+		}
+	}
+}
+function name_chk5()											//Validation of name
+{
+	
+	user_name11=document.getElementById("login_user").value;
+	var len=user_name11.length;
+	if(len<3 || len>25)
+	{
+		$("#login_user_error").html("Length should be >=3");
+		$("#login_user_error").css("color","red");
+		blank_name=1;
+	}
+	else
+	{
+		re = /^[A-Za-z0-9]+$/;
+		var isValid = re.test(user_name11);
+		if(isValid==false)
+		{
+			$("#login_user_error").html("Cannot contain special characters");
+			blank_name=1;
+			$("#login_user_error").css("color","red");
+			
+			
+		}
+		else
+		{
+			$("#login_user_error").html("");
+			blank_name=1;
+			flag_id=1;
+			
+		}
+	}
+}
+function name_chk7()											//Validation of name
+{
+	
+	user_name12=document.getElementById("pass_user_for").value;
+	var len=user_name12.length;
+	if(len<3 || len>25)
+	{
+		$("#for_pass_vali").html("Length should be >=3");
+		$("#for_pass_vali").css("color","red");
+		blank_name=1;
+	}
+	else
+	{
+		re = /^[A-Za-z0-9]+$/;
+		var isValid = re.test(user_name12);
+		if(isValid==false)
+		{
+			$("#for_pass_vali").html("Cannot contain special characters");
+			blank_name=1;
+			$("#for_pass_vali").css("color","red");
+			
+			
+		}
+		else
+		{
+			$("#for_pass_vali").html("");
+			blank_name=1;
+			flag_for=1;
+			
+		}
+	}
+}
+function name_chk1()											//Validation of name
+{
+	user_name=document.getElementById("password").value;
+	var len=user_name.length;
+	if(len<5)
+	{
+		$("#name_id1").html("Length should be >=5");
+		$("#name_id1").css("color","red");
+		
+		blank_name=1;
+	}
+	else
+	{
+		
+		flag2=1;
+	}
+}
+function name_chk2()											//Validation of name
+{
+	user_name=document.getElementById("pass_new").value;
+	var len=user_name.length;
+	if(len<5)
+	{
+		$(".pass_error1").html("Length should be >=5");
+		$(".pass_error1").css("color","red");
+		blank_name=1;
+	}
+	else
+	{
+		
+		flag_id=1;
+	}
+}
+function name_chk6()											//Validation of name
+{
+	user_name=document.getElementById("login_pass").value;
+	var len=user_name.length;
+	if(len<5)
+	{
+		$("#login_pass_error").html("Length should be >=5");
+		$("#login_pass_error").css("color","red");
+		blank_name=1;
+	}
+	else
+	{
+		
+		flag_pass=1;
+	}
+}
+function form_submit()									//Function for the submit button
+{
+	alert("aya");
+	user_name1=document.getElementById("username").value;
+	var len1=user_name1.length;alert("aya1");
+	user_name2=document.getElementById("password").value;
+	var len2=user_name2.length;alert("aya2");
+	user_name3=document.getElementById("email").value;
+	var len3=user_name3.length;alert("aya3");
+	
+	if(len1 < 1)
+	{
+		$("#name_id").html("Username cannot be blank");
+		$("#name_id").css("color","red");
+		return(false);
+		
+	}
+	else if(len2 < 1)
+	{$("#name_id1").html("Password cannot be blank");
+		$("#name_id1").css("color","red");
+		return(false);		
+		}
+	else if(len3 < 1)
+	{
+	$("#name_id3").html("Email cannot be blank");
+	$("#name_id3").css("color","red");
+	return(false);
+	}
+
+	
+	option1=document.getElementById("sqa").value;
+	if(option1=="secq")
+	{
+	
+	$("#sqa_error").html("Please Select your Security Question");
+	$("#sqa_error").css("color","red");
+	
+	document.getElementById("sqa").focus();
+	return(false);
+	}
+	option_ans=document.getElementById("seca_ans").value;
+		
+	if(option_ans=="")
+	{
+	$("#sqa_error1").html("Please Answer the security question");
+	$("#sqa_error1").css("color","red");
+	document.getElementById("seca_ans").focus();
+	return(false);
+	}
+
+if(flag1==1 && flag2==1 )
+	{	
+		return true;
+	}
+	else
+	{
+		return false;	
+	}
+}
+
+
+function submit_login()
+{
+	
+	
+	user_name=document.getElementById("login_user").value;
+	var len1=user_name.length;
+	user_pass=document.getElementById("login_pass").value;
+	var len2=user_pass.length;
+
+	if(len1 < 1)
+	{
+				
+		$("#login_user_error").html("Username cannot be blank");
+		$("#login_user_error").css("color","red");
+
+	}
+	else
+	{
+		if(len2 < 1)
+
+		{
+			$("#login_pass_error").html("Password cannot be blank");
+			$("#login_pass_error").css("color","red");
+
+		}
+			
+	}
+	
+	if(flag_pass==1 && flag_pass==1)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+
+
+}
+
+function for_check()
+{
+
+	user_name12=document.getElementById("pass_user_for").value;
+	var len=user_name12.length;
+
+	if(len< 1)
+	{
+		$("#for_pass_vali").html("Username can not be blank");
+		$("#for_pass_vali").css("color","red");
+		
+	}
+
+
+	if(flag_for==1)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+
+
+}
+
+
+
+/* var flag1=1;
+var flag2=1;
+var flag3=1;
+var flag4=1;
+
+var format_name=0;									//Declaring and initializing the variables
+var format_add=0;
+var format_email=0;
+var format_contact=0;
+
+var blank_name=0;
+var blank_add=0;
+var blank_email=0;
+var blank_contact=0;
+
+$(document).ready(function(){								//Function to excute when the document is ready
+
+$("#submit_button").click(function(){
+form_submit();										//Function to execute on mouse click
+});
+
+$("#txt_name").blur(function(){								//Function to execute on element blur
+name_chk();
+});
+
+$("#txt_address").blur(function(){
+addr_chk();
+});
+
+$("#txt_contact").blur(function(){
+contact_chk();
+});
+
+$("#txt_email").blur(function(){
+email_chk();
+});
+
+//-----------------------------------
+$("#txt_name").focus(function(){								//Function to execute on element focus
+$("#name_id").html("");
+});
+
+$("#txt_address").focus(function(){
+$("#address_id").html("");
+});
+
+$("#txt_contact").focus(function(){
+$("#contact_id").html("");
+});
+
+$("#txt_email").focus(function(){
+$("#email_id").html("");
+});
+//-------------------------------------
+
+$("#reset_button").click(function(){
+form_reset();
+});
+
+
+});
+
+function system_date()									//Function for system date
+{
+	var t=new Date();
+	var date=t.getDate();
+	var month=t.getMonth()+1;
+	var year=t.getFullYear();	
+	var hrs=t.getHours();
+	var mins=t.getMinutes();
+	var secs=t.getSeconds();
+	var t1="Date: "+date+"/"+month+"/"+year+" Time: "+hrs+":"+mins+":"+secs;
+	document.getElementById("date_view").innerHTML=t1;
+	return false;
+}
+
+var interval=self.setInterval(function(){system_date()},1000);				//Function to update the time after every second
+
+function form_submit()									//Function for the submit button
+{
+	if(blank_name==0)
+	{
+			$("#name_id").html("Name can not be blank");
+	}
+
+	if(blank_add==0)
+	{
+			$("#address_id").html("Address can not be blank");
+	}
+
+	if(blank_email==0)
+	{
+			$("#email_id").html("Email can not be blank");
+	}	
+	if(blank_contact==0)
+	{
+			$("#contact_id").html("Contact can not be blank");
+	}	
+	
+	if(flag1==0 && flag2==0 && flag3==0 && flag4==0)
+	{
+		location.replace('home.html');
+	}
+	else
+	{
+	}
+}
+//-----------------------------------------$("id").val();
+function name_chk()											//Validation of name
+{
+	user_name=document.getElementById("txt_name").value;
+	var len=user_name.length;
+	if(len<3 || len>25)
+	{
+		$("#name_id").html("Enter valid username");
+		blank_name=1;
+	}
+	else
+	{
+		re = /^[A-Za-z]+$/;
+		var isValid = re.test(user_name);
+		if(isValid==false)
+		{
+			$("#name_id").html("Username should not contain special characters");
+			blank_name=1;
+			
+		}
+		else
+		{
+			$("#name_id").html("");
+			blank_name=1;
+			flag1=0;
+			
+		}
+	}
+}
+
+function addr_chk()										//Validation of address
+{
+	user_addr=document.getElementById("txt_address").value;
+	var len=user_addr.length;
+	if(len==0)
+	{
+		$("#address_id").html("The field cannot be blank!!!");
+		blank_add=1;
+	}
+	else
+	{	$("#address_id").html("");
+		blank_add=1;
+		flag2=0;
+	}
+}
+
+function contact_chk()										//Validation of contact number
+{
+	user_contact=document.getElementById("txt_contact").value;
+ 	if (user_contact==null || user_contact=="")
+ 	 {
+		$("#contact_id").html("Phone number can't be blank");
+		blank_contact=1;
+ 		return false;
+ 	 }       
+
+       	 if(isNaN(user_contact)|| user_contact.indexOf(" ")!=-1)
+	{
+		$("#contact_id").html("Please enter numeric value!!");
+		blank_contact=1;
+		return false;
+        }
+
+	if (user_contact.length != 10)
+	{
+		$("#contact_id").html("Please enter 10 numbers only!!");
+		blank_contact=1;
+		return false;
+        }
+	else
+	{
+		$("#contact_id").html("");
+		blank_contact=1;
+		flag3=0;
+		return true;
+	}
+
+}
+
+function email_chk()										//Validation of email address
+{
+	var text_val=document.getElementById("txt_email").value;
+	var x;
+	var text_len=text_val.length;
+	if(text_len==0)
+	{
+		$("#email_id").html("Email ID cannot be blank");
+		blank_email=1;
+		flag4=1;
+   		return false;
+	}
+
+		if(text_len!=0)
+	{	
+		var check = /^[a-zA-Z][a-zA-Z0-9]*[_.]{0,1}[a-zA-Z0-9]*@{1}[a-zA-Z0-9]+\.{1}[a-zA-Z]{2,3}$/;	
+		var result = check.test(text_val);
+		if(result==false)
+		{
+			$("#email_id").html("Invalid Email ID Format");
+			blank_email=1;
+			return false;	
+		}
+		else
+		{
+			$("#email_id").html("");
+			blank_email=1;
+			flag4=0;
+			return true;
+		}
+	}	
+}
+
+function form_reset()												//Function for form reset
+{
+	document.getElementById("txt_name").value="";
+	document.getElementById("txt_address").value="";
+	document.getElementById("txt_contact").value="";
+	document.getElementById("txt_email").value="";
+	document.getElementById("text_area").value="";
+	
+
+	$("#email_id").html("");
+	$("#contact_id").html("");
+	$("#name_id").html("");
+	$("#address_id").html("");
+
+	
+	blank_name=0;
+	blank_add=0;
+	blank_email=0;
+	blank_contact=0;
+	
+}
+*/
